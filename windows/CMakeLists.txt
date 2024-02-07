@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(whats_app_helper LANGUAGES CXX)
+project(dnstn_whatapp LANGUAGES CXX)
 
-set(BINARY_NAME "whats_app_helper")
+set(BINARY_NAME "dnstn_whatapp")
 
 cmake_policy(SET CMP0063 NEW)
 

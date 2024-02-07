@@ -1,4 +1,4 @@
-package com.example.whats_app_helper
+package com.example.dnstn_whatapp
 
 import io.flutter.embedding.android.FlutterActivity
 

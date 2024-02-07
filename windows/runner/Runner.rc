@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "whats_app_helper" "\0"
+            VALUE "FileDescription", "dnstn_whatapp" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "whats_app_helper" "\0"
+            VALUE "InternalName", "dnstn_whatapp" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "whats_app_helper.exe" "\0"
-            VALUE "ProductName", "whats_app_helper" "\0"
+            VALUE "OriginalFilename", "dnstn_whatapp.exe" "\0"
+            VALUE "ProductName", "dnstn_whatapp" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
