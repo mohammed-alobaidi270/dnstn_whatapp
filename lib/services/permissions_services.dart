@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'dart:io' show Platform;
@@ -25,17 +26,23 @@ class PermissionsServices {
 
       if (statuses[Permission.location] == PermissionStatus.granted &&
           statuses[Permission.camera] == PermissionStatus.granted) {
-        print('Permission granted');
+        if (kDebugMode) {
+          print('Permission granted');
+        }
         return const AsyncData(true);
       } else if (statuses[Permission.camera] == PermissionStatus.denied ||
           statuses[Permission.location] == PermissionStatus.denied) {
-        print(
+        if (kDebugMode) {
+          print(
             'Permission denied. Show a dialog and again ask for the permission');
+        }
         return const AsyncError(false);
       } else if (statuses[Permission.camera] ==
               PermissionStatus.permanentlyDenied ||
           statuses[Permission.location] == PermissionStatus.permanentlyDenied) {
-        print('Take the user to the settings page.');
+        if (kDebugMode) {
+          print('Take the user to the settings page.');
+        }
         await openAppSettings();
         // return const AsyncError(false);
       }

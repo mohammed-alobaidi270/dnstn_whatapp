@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:whats_app_helper/services/permissionsServices.dart';
+import 'package:dnstn_whatapp/services/permissions_services.dart';
 
 
 final permissionNotifier =
